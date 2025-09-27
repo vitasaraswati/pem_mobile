@@ -1,6 +1,7 @@
 # Hello World - Flutter Project
 
 A new Flutter project.
+
 Mata Kuliah : Pemrograman Mobile  
 
 Nama       : Vita Eka Saraswati  
@@ -21,3 +22,25 @@ No Absen   : 29
 
 **Langkah 3 : Image Widget**  
 ![Screenshot hello_world](images/03.png)
+
+---
+
+## Praktikum 5
+**Langkah 2 : Button Widget** 
+![Screenshot hello_world](images/04.png)
+
+**Langkah 3 : Scaffold Widget**
+![Screenshot hello_world](images/05.png)
+
+**Langkah 4 : Dialog Widget** 
+![Screenshot hello_world](images/06.png)
+
+**Langkah 5 : Input & text field widget** 
+![Screenshot hello_world](images/07.png)
+
+**Langkah 6 : Date pickers widget** 
+![Screenshot hello_world](images/08.png)
+
+
+
+
