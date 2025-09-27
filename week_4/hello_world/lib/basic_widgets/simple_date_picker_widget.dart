@@ -1,8 +1,7 @@
+import 'dart:async';
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(const MyApp());
-}
+void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -33,11 +32,10 @@ class _MyHomePageState extends State<MyHomePage> {
   Future<void> _selectDate(BuildContext context) async {
     // Initial DateTime FIinal Picked
     final DateTime? picked = await showDatePicker(
-      context: context,
-      initialDate: selectedDate,
-      firstDate: DateTime(2015, 8),
-      lastDate: DateTime(2101),
-    );
+        context: context,
+        initialDate: selectedDate,
+        firstDate: DateTime(2015, 8),
+        lastDate: DateTime(2101));
     if (picked != null && picked != selectedDate) {
       setState(() {
         selectedDate = picked;
@@ -48,20 +46,22 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text(widget.title)),
+      appBar: AppBar(
+        title: Text(widget.title),
+      ),
       body: Center(
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: <Widget>[
             Text("${selectedDate.toLocal()}".split(' ')[0]),
-            const SizedBox(height: 20.0),
+            const SizedBox(
+              height: 20.0,
+            ),
             ElevatedButton(
               onPressed: () => {
                 _selectDate(context),
                 // ignore: avoid_print
-                print(
-                  selectedDate.day + selectedDate.month + selectedDate.year,
-                ),
+                print(selectedDate.day + selectedDate.month + selectedDate.year)
               },
               child: const Text('Pilih Tanggal'),
             ),
