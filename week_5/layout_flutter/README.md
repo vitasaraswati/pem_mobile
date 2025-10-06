@@ -1,16 +1,35 @@
-# layout_flutter
+# Hello World - Flutter Project
 
 A new Flutter project.
 
-## Getting Started
+Mata Kuliah : Pemrograman Mobile Week 5
 
-This project is a starting point for a Flutter application.
+Nama       : Vita Eka Saraswati  
+Kelas      : SIB 3D  
+No Absen   : 29  
 
-A few resources to get you started if this is your first Flutter project:
+---
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Praktikum 1
+**Layout di Flutter**
+![Screenshot hello_world](images/Picture1.png)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+---
+
+## Praktikum 2
+**Implementasi button row**
+![Screenshot hello_world](images/Picture2.png)
+
+---
+
+## Praktikum 3
+**Implementasi textSection**
+![Screenshot hello_world](images/Picture3.png)
+
+---
+
+## Praktikum 4
+**Implementasi imageSection**
+![Screenshot hello_world](images/Picture4.png)
+
+---
