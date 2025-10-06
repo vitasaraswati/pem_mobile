@@ -73,6 +73,7 @@ class MyApp extends StatelessWidget {
           children: [
             titleSection,
             buttonSection, // Prak 2 - Langkah 3: button section ke body
+            textSection, // Prak 3 - Langkah 2: text section ke body
           ],
         ),
       ),
