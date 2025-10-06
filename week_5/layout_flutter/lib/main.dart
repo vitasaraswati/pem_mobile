@@ -51,10 +51,24 @@ class MyApp extends StatelessWidget {
       ],
     );
 
+    // Prak 3 - Langkah 1: Implementasi textSection
+    Widget textSection = Container(
+      padding: const EdgeInsets.all(32),
+      child: const Text(
+        'Gunung Panderman merupakan salah satu gunung favorit di Kota Batu '
+        'bagi para pendaki pemula. Dengan ketinggian sekitar 2.045 meter di atas permukaan laut, '
+        'gunung ini menawarkan panorama alam yang indah serta pemandangan Kota Batu '
+        'dan Malang dari puncaknya. Jalur pendakiannya relatif mudah dan hanya membutuhkan '
+        'waktu sekitar 2–3 jam untuk mencapai puncak. '
+        'Wisata ini sangat cocok bagi pecinta alam dan petualangan ringan. '
+        '\n\nDibuat oleh: Vita Eka Saraswati (2341760082)',
+        softWrap: true,
+      ),
+    );
+
     return MaterialApp(
       title: 'Flutter layout: Vita Eka Saraswati 2341760082',
       home: Scaffold(
-        appBar: AppBar(title: const Text('Flutter layout demo')),
         body: Column(
           children: [
             titleSection,
