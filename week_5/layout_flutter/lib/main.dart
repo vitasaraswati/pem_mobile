@@ -55,31 +55,35 @@ class MyApp extends StatelessWidget {
       title: 'Flutter layout: Vita Eka Saraswati 2341760082',
       home: Scaffold(
         appBar: AppBar(title: const Text('Flutter layout demo')),
-        // Ganti body menjadi titleSection
-        body: Column(children: [titleSection]),
+        body: Column(
+          children: [
+            titleSection,
+            buttonSection, // Prak 2 - Langkah 3: button section ke body
+          ],
+        ),
       ),
     );
   }
-}
 
-// Prak 2 - Langkah 1: Implementasi button row
-Column _buildButtonColumn(Color color, IconData icon, String label) {
-  return Column(
-    mainAxisSize: MainAxisSize.min,
-    mainAxisAlignment: MainAxisAlignment.center,
-    children: [
-      Icon(icon, color: color),
-      Container(
-        margin: const EdgeInsets.only(top: 8),
-        child: Text(
-          label,
-          style: TextStyle(
-            fontSize: 12,
-            fontWeight: FontWeight.w400,
-            color: color,
+  // Prak 2 - Langkah 1: Implementasi button row
+  Column _buildButtonColumn(Color color, IconData icon, String label) {
+    return Column(
+      mainAxisSize: MainAxisSize.min,
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        Icon(icon, color: color),
+        Container(
+          margin: const EdgeInsets.only(top: 8),
+          child: Text(
+            label,
+            style: TextStyle(
+              fontSize: 12,
+              fontWeight: FontWeight.w400,
+              color: color,
+            ),
           ),
         ),
-      ),
-    ],
-  );
+      ],
+    );
+  }
 }
