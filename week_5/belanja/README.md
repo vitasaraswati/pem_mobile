@@ -1,16 +1,37 @@
-# belanja
+# Layout & Navigasi - Flutter Project (JS5 Praktikum 5)
 
 A new Flutter project.
 
-## Getting Started
+Mata Kuliah : Pemrograman Mobile Week 5
 
-This project is a starting point for a Flutter application.
+Nama       : Vita Eka Saraswati  
+Kelas      : SIB 3D  
+No Absen   : 29  
 
-A few resources to get you started if this is your first Flutter project:
+---
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Praktikum 5
+**Navigasi di Flutter**
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![Screenshot](images/1.png)
+
+![Screenshot](images/2.png)
+
+---
+
+## Tugas Praktikum 2
+**Soal 3 : Menambahkan  atribut foto produk, stok, dan rating dan merubah tampilan menjadi GridView**
+
+![Screenshot hello_world](images/3.png)
+
+---
+
+**Soal 4 & 5 : Implementasi HeroWidget & Footer**
+
+![Screenshot hello_world](images/4.png)
+
+---
+
+**Soal 6 : Implementasi Go Router**
+
+![Screenshot hello_world](images/5.png)
