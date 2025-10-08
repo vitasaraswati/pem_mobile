@@ -1,64 +1,58 @@
-import 'package:belanja/models/item.dart';
 import 'package:flutter/material.dart';
+import 'package:belanja/models/item.dart';
 
 class ItemPage extends StatelessWidget {
-  const ItemPage({Key? key}) : super(key: key);
+  final Item? item;
+  const ItemPage({super.key, this.item});
 
   @override
   Widget build(BuildContext context) {
-    final Item? itemArgs =
-        ModalRoute.of(context)?.settings.arguments as Item?;
-
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Detail Barang'),
-        backgroundColor: Colors.blue,
-      ),
-      body: itemArgs == null
-          ? const Center(child: Text('No item selected'))
+      appBar: AppBar(title: const Text('Detail Barang')),
+      body: item == null
+          ? const Center(child: Text('Tidak ada item yang dipilih'))
           : Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Hero(
-                  tag: itemArgs.name,
+                  tag: item!.name,
                   child: Image.asset(
-                    itemArgs.image,
+                    item!.image,
                     height: 250,
-                    width: double.infinity,
                     fit: BoxFit.cover,
                   ),
                 ),
                 const SizedBox(height: 16),
                 Text(
-                  itemArgs.name,
+                  item!.name,
                   style: const TextStyle(
-                    fontSize: 22,
+                    fontSize: 24,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
                 Text(
-                  'Rp${itemArgs.price}',
-                  style: const TextStyle(fontSize: 18, color: Colors.blue),
+                  'Harga: Rp${item!.price}',
+                  style: const TextStyle(fontSize: 18),
                 ),
-                const SizedBox(height: 8),
-                Text('Stok: ${itemArgs.stock}'),
+                Text('Stok: ${item!.stock}'),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     const Icon(Icons.star, color: Colors.amber),
-                    Text('${itemArgs.rating}'),
+                    Text('${item!.rating}'),
                   ],
-                ),
-                const Padding(
-                  padding: EdgeInsets.all(16.0),
-                  child: Text(
-                    'Produk berkualitas tinggi dengan harga terjangkau. '
-                    'Cocok untuk kebutuhan sehari-hari.',
-                    textAlign: TextAlign.center,
-                  ),
                 ),
               ],
             ),
+      bottomNavigationBar: Container(
+        color: Colors.blue,
+        padding: const EdgeInsets.all(12),
+        child: const Text(
+          'Vita — 2341760082',
+          textAlign: TextAlign.center,
+          style: TextStyle(color: Colors.white),
+        ),
+      ),
     );
   }
 }
