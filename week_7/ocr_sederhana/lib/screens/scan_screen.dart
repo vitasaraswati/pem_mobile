@@ -15,7 +15,7 @@ class ScanScreen extends StatefulWidget {
 }
 
 class _ScanScreenState extends State<ScanScreen> {
-  CameraController? _controller; // gunakan nullable agar aman
+  CameraController? _controller;
   late Future<void> _initializeControllerFuture;
 
   @override
@@ -24,7 +24,6 @@ class _ScanScreenState extends State<ScanScreen> {
     _initCamera();
   }
 
-  /// Inisialisasi kamera
   void _initCamera() async {
     try {
       cameras = await availableCameras();
@@ -47,7 +46,6 @@ class _ScanScreenState extends State<ScanScreen> {
     super.dispose();
   }
 
-  /// Proses OCR dari file gambar
   Future<String> _ocrFromFile(File imageFile) async {
     final inputImage = InputImage.fromFile(imageFile);
     final textRecognizer = TextRecognizer(script: TextRecognitionScript.latin);
@@ -58,7 +56,6 @@ class _ScanScreenState extends State<ScanScreen> {
     return recognizedText.text;
   }
 
-  /// Ambil foto lalu pindah ke halaman hasil
   Future<void> _takePicture() async {
     if (_controller == null) return;
 
@@ -92,7 +89,6 @@ class _ScanScreenState extends State<ScanScreen> {
 
   @override
   Widget build(BuildContext context) {
-    // Jika controller belum siap, tampilkan loading
     if (_controller == null || !_controller!.value.isInitialized) {
       return const Scaffold(body: Center(child: CircularProgressIndicator()));
     }
