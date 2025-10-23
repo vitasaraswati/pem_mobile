@@ -1,16 +1,42 @@
-# ocr_sederhana
+# UTS 1 - Mata Kuliah Pemrograman Mobile 
 
-A new Flutter project.
+**Nama        : Vita Eka Saraswati**  
+**NIM         : 2341760082**  
+**Kelas       : SIB 3D (29)**  
 
-## Getting Started
+---
+## Instruksi Awal
 
-This project is a starting point for a Flutter application.
+1. Pastikan proyek ocr_sederhana sudah diinisialisasi sebagai repositori Git dan terhubung ke akun GitHub.
+2. Lakukan commit awal untuk memastikan branch main Anda bersih.
 
-A few resources to get you started if this is your first Flutter project:
+---
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Soal 1 : Output Modifikasi Struktur Navigasi dan Aliran
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![Screenshot](images/soal%201.1.png)
+
+![Screenshot](images/soal%201.2.png)
+
+![Screenshot](images/soal%201.3.png)
+
+---
+
+## Soal 2 : Penyesuaian Tampilan dan Penanganan State/Error
+
+![Screenshot](images/soal%202.1.png)
+
+![Screenshot](images/soal%202.2.png)
+
+![Screenshot](images/soal%202.3.png)
+
+![Screenshot](images/soal%202.4.png)
+
+---
+
+## Soal 3 : Implementasi Plugin Text-to-Speech (TTS)
+
+**Hasil Output:**
+
+[Output Soal 3 - TTS klik pada tautan berikut](https://drive.google.com/file/d/1f9H96zTid7c-5XDqAHZYJH5lSfl3ynqk/view?usp=drive_link)
+
