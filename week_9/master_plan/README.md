@@ -1,16 +1,32 @@
-# master_plan
+# JOBSHEET 9 (MASTER PLAN) - Mata Kuliah Pemrograman Mobile 
 
-A new Flutter project.
+**Nama        : Vita Eka Saraswati**  
+**NIM         : 2341760082**  
+**Kelas       : SIB 3D (29)**  
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## Praktikum 1 : Dasar State dengan Model-view
 
-A few resources to get you started if this is your first Flutter project:
+**Hasil Output:**
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+![Output](images/1.gif)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+---
+
+## Praktikum 2 : Mengelola Data Layer Dengan Inheritedwidget Dan Inheritednotifier
+
+**Hasil Output:**
+
+![Output](images/2.gif)
+
+---
+
+## Praktikum 3 : Membuat State Di Multiple Screen 
+
+**Hasil Output:**
+
+![Output](images/3.gif)
+
+---
+
